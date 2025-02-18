@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 *{
     padding: 0px;
     margin: 0;
@@ -65,6 +63,10 @@ body.dark p{
     color: #fff;
 }
 
+.box-search.dark{
+    border: 1px solid #fff;
+}
+
 .bright_item{
     color: #f1c40f;
     position: absolute;
@@ -103,22 +105,41 @@ body.dark p{
     font-size: 20px;
 }
 
+.box-search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    width: 540px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
 .link-acess{
     position: relative;
     text-align: center;
-    top: 200px;
+    top: 16px;
     width: 100%;
+    right: 50px;
+    
 }
 
 .link-acess input{
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
-    padding: 15px;
-    width: 500px;
+    align-items: center;
+    border: none;
+    width: 420px;
+    outline: 0;
 }
 
 .button{
+    position: relative;
     width: 100%;
     text-align: center;
 }
@@ -126,9 +147,8 @@ body.dark p{
 .button button{
     color: #fff;
     position: relative;
-    left: 190px;
-    top: 158px;
-    height: 0 auto;
+    left: 265px;
+    bottom: 27px;
     border: 0;
     border-radius: 3px;
     background: linear-gradient(to right, #7B68EE, #9370DB) ;
@@ -136,7 +156,7 @@ body.dark p{
     cursor: pointer;
 }
 
-.button:hover{
+ .button:hover{
     width: 100%;
     text-align: center;
 }
@@ -145,8 +165,8 @@ body.dark p{
 .button button:hover{
     background: linear-gradient(to right, #9400D3, #9932CC );
     position: relative;
-    left: 190px;
-    top: 158px;
+    left: 265px;
+    bottom: 27px;
     height: 0 auto;
     border: 0;
     border-radius: 3px;   
