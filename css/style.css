@@ -55,11 +55,20 @@ body{
     left: 40px;
     background-color: black;
 }
+
 body.dark{
     background-color: #212121;
 }
 
 body.dark p{
+    color: #fff;
+}
+
+body.dark h2{
+    color: #fff;
+}
+
+body.dark span{
     color: #fff;
 }
 
@@ -118,7 +127,7 @@ body.dark p{
     left: 50%;
     transform: translate(-50%, 400%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 1px solid black;
+    border: 1px solid #7B68EE;
     box-sizing: border-box;
 }
 
@@ -128,7 +137,6 @@ body.dark p{
     top: 16px;
     width: 100%;
     right: 50px;
-    
 }
 
 .link-acess input{
@@ -170,4 +178,56 @@ body.dark p{
     height: 0 auto;
     border: 0;
     border-radius: 3px;   
+}
+
+.we-check {
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px;
+    position: relative; 
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    max-width: 90%;
+}
+
+
+.we-check p{
+    position: absolute;
+    text-align: center;
+    bottom: 70px;
+    left: 45%;
+    gap: 20px;
+}
+
+.we-check ul {
+    list-style: none; 
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.we-check li {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    font-size: 18px;
+}
+
+.we-check img {
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .we-check {
+        top: 300px;
+    }
+
+    .we-check li {
+        text-align: center;
+    }
 }
